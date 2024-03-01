@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Portfolio</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/poiskls.css" rel="stylesheet" />
+  </head>
+
+  <body onclick="PlayPro()">
+    <audio autoplay src="audio/bg.mp3" type="audio/mp3" loop></audio>
+
+    <div id="mobile-menu-open" class="shadow-large" onmousedown="btn2.play()">
+      <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
+    <!-- End #mobile-menu-toggle -->
+    <header>
+      <div id="mobile-menu-close" onmousedown="back.play()">
+        <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
+      </div>
+      <ul id="menu" class="shadow">
+        <li>
+          <a href="#about" class="link">About</a>
+        </li>
+        <li>
+          <a href="#experience" class="link">Experience</a>
+        </li>
+        <li>
+          <a href="#education" class="link">Education</a>
+        </li>
+        <li>
+          <a href="#projects" class="link">Projects</a>
+        </li>
+        <li>
+          <a href="#skills" class="link">Skills</a>
+        </li>
+        <li>
+          <a href="#contact" class="link">Contact</a>
+        </li>
+      </ul>
+    </header>
+    <!-- End header -->
+
+    <div id="lead">
+      <div id="lead-content">
+        <h1 class="poisk jade" onmousemove="btn1.play()">Jade poisk-ls</h1>
+        <h2 class="cyber" onmousemove="btn1.play()">Cyber Security</h2>
+        <a href="#" class="btn-rounded-white" id="resume" onclick="pro()">Download Resume</a>
+      </div>
+      <!-- End #lead-content -->
+
+      <div id="lead-overlay"></div>
+
+      <div id="lead-down">
+        <span>
+          <i class="fa fa-chevron-down" aria-hidden="true"></i>
+        </span>
+      </div>
+      <!-- End #lead-down -->
+    </div>
+    <!-- End #lead -->
+
+    <!-- Start #about -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h2 class="heading">Whoami</h2>
+          </div>
+          <div class="col-md-8">
+            <span class="ptext"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End #about -->
+
+    <div id="experience" class="background-alt">
+      <h2 class="heading">Experience</h2>
+      <div id="experience-timeline">
+        <div data-date="2019 – 2020" id="exp">
+          <h3 class="txtt">Termux</h3>
+          <h4 class="xm">
+            <small><i class="fa fa-terminal"></i> Terminal</small>
+          </h4>
+          <p class="ptext" id="term1"></p>
+        </div>
+
+        <div data-date="2021" id="exp">
+          <h3 class="txtt">Database</h3>
+          <h4 class="xm">
+            <small><i class="fa fa-terminal"></i> Terminal</small>
+          </h4>
+          <p class="ptext" id="term2"></p>
+        </div>
+
+        <div data-date="2022" id="exp">
+          <h3 class="txtt">Mobile app</h3>
+          <h4 class="xm">
+            <small>Jquery Mobile</small>
+          </h4>
+          <p class="ptext" id="term3">
+            
+          </p>
+        </div>
+
+        <div data-date="2023" id="exp">
+          <h3 class="txtt">Installation</h3>
+          <h4 class="xm">
+            <small>APACHE CORDOVA</small>
+          </h4>
+          <p class="ptext" id="term4"></p>
+        </div>
+
+        <div data-date="2024" id="exp">
+          <h3 class="txtt">PRESENT</h3>
+          <h4 class="xm">
+            <small>OJT IN MCC</small>
+          </h4>
+          <p class="ptext" id="term5"></p>
+        </div>
+      </div>
+    </div>
+    <!-- End mcc -->
+
+    <!-- start MCC -->
+    <div id="education">
+      <h2 class="heading">Education</h2>
+
+      <div class="education-block">
+        <h3 class="mnhs">Madridejos Community College</h3>
+        <span class="education-date">June 2019</span>
+        <h4 class="ptext">
+          <br />
+          <small>- Bachelor of Science in Information Technology</small>
+        </h4>
+      </div>
+      <!-- End MCC -->
+
+      <!-- start MNHS -->
+      <div class="education-block">
+        <h3 class="mnhs">Madridejos National High School</h3>
+        <span class="education-date">2018-2019</span>
+        <h4 class="ptext">
+          <br />
+          <small>- High School Graduated</small>
+        </h4>
+      </div>
+      <!-- End MNHS -->
+    </div>
+    <!-- End #education -->
+
+    <!-- start #staff -->
+    <div id="projects" class="  ">
+      <h2 class="heading">Staff</h2>
+      <div class="container">
+        <div class="row">
+          <div class="project shadow-large" id="staff">
+            <div class="project-image">
+              <img src="images/tmux1.png" />
+            </div>
+            <!-- End .project-image -->
+            <div class="project-info">
+              <h3 class="th3">Glyde-Fish</h3>
+              <p class="par">
+                This command will add Auto-Correct Feature in your termux, and
+                give your terminal a diferent look.
+              </p>
+              <a
+                href="https://github.com/poisk-ls/glyde-fish"
+                target="_blank"
+                class="viewsite"
+                >View Project</a
+              >
+            </div>
+            <!-- End .project-info -->
+          </div>
+          <!-- End .project -->
+
+          <div class="project shadow-large" id="staff">
+            <div class="project-image">
+              <img src="images/webs1.png" />
+            </div>
+            <!-- End .project-image -->
+            <div class="project-info">
+              <h3 class="th3">Modding Games</h3>
+              <p class="par">
+                This site will provide you safest way to download modding games
+                with free, apps and etc,.. so enjoy the show!
+              </p>
+              <a
+                href="https://jadepoiskls.blogspot.com/?m=1"
+                target="_blank"
+                class="viewsite"
+                >View site</a
+              >
+            </div>
+            <!-- End .project-info -->
+          </div>
+          <!-- End .project -->
+
+          <div class="project shadow-large" id="staff">
+            <div class="project-image">
+              <img src="images/web2.png" />
+            </div>
+            <!-- End .project-image -->
+            <div class="project-info">
+              <h3 class="th3">HD Movies</h3>
+              <p class="par">
+                Enjoy watching!😍 - This is completely free - Follow us for more
+                update - Scrolldown and select your favourite movies. - Genre:
+                Animation | Action | Horror | Drama | Adventure | Tagalog Dubbed
+                | English Sub | as follows..
+              </p>
+              <a
+                href="https://poisklss.blogspot.com/2023/01/movie-for-2023.html"
+                target="_blank"
+                class="viewsite"
+                >View site</a
+              >
+            </div>
+            <!-- End .project-info -->
+          </div>
+          <!-- End .project -->
+        </div>
+      </div>
+    </div>
+    <!-- End #projects -->
+
+    <div id="skills">
+      <h2 class="heading">Skills</h2>
+      <ul>
+        <li class="list-skills">Terminal</li>
+        <li class="list-skills">Html</li>
+        <li class="list-skills">Mysql</li>
+        <li class="list-skills">Database</li>
+        <li class="list-skills">Modding</li>
+        <li class="list-skills">Mobile Security</li>
+      </ul>
+    </div>
+    <!-- End #skills -->
+
+    <hr />
+
+    <div id="contact">
+      <div id="skills">
+        <h2 class="heading">Get in touch</h2>
+        <ul>
+          <li>
+            <a href="https://github.com/poisk-ls" target="_blank"
+              ><i class="fa fa-github" aria-hidden="true"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://stackoverflow.com/poisk-ls" target="_blank"
+              ><i class="fa fa-stack-overflow" aria-hidden="true"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://linkedin.com/in/poisk-ls" target="_blank"
+              ><i class="fa fa-linkedin" aria-hidden="true"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/poiskls" target="_blank"
+              ><i class="fa fa-facebook" aria-hidden="true"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://twitter.com/poiskls" target="_blank"
+              ><i class="fa fa-twitter" aria-hidden="true"></i
+            ></a>
+          </li>
+          <li>
+            <a href="mailto:jadepoisk@gmail.com" target="_blank"
+              ><i class="fa fa-envelope" aria-hidden="true"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <!-- End #skills -->
+    </div>
+
+    <hr />
+    <div class="col-md-12 copyright">
+      <center>
+        <p>Copyright &copy; <span id="current-year">2024</span> poisk-ls</p>
+      </center>
+    </div>
+    <footer>
+      <div class="col-sm-12 top" id="tops">
+        <span id="to-top">
+          <i class="fa fa-chevron-up" aria-hidden="true"></i>
+        </span>
+      </div>
+    </footer>
+    <!-- End footer -->
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/scripts.min.js"></script>
+    <script src="js/typed.umd.js"></script>
+    <script src="js/index.umd.js"></script>
+    <script src="js/jade.js"></script>
+  </body>
+</html>
