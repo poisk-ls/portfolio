@@ -9,7 +9,7 @@ btn2 = new Audio();
 btn2.src = "audio/btn2.mp3";
 
 function pro(){
-  alert("no linked, bitch....")
+  alert("no linked....")
 }
 
 PlayPro = () => {
